@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+
+#nav {
+  background-color: rgb(46, 46, 46);
+  padding: 5px 40px;
+  color: white;
+  font-size: 28px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-title {
+  letter-spacing: 5px;
+}
+
+.nav-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url("../assets/imgs/shopping-bag.png");
+  background-size: contain;
+}
+
+/* navbar upto here */
+
+.product-container {
+  width: 100vw;
+  display: flex;
+}
+
+/* card section */
+.card-section-container {
+  width: 70%;
+  padding: 20px;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* cart section */
+.cart-section-container {
+  width: 30%;
+}
+
+/* card styling */
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 160px;
+    border : 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.product-img {
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.product-name {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-top: 1px solid black;
+    margin-top: 5px;
+}
+
+.price-container {
+    width: 100%;
+    border-top: 1px solid black;
+    font-family: sans-serif;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.counter-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.counter-container button {
+    width: 50px;
+    cursor: pointer;
+    font-size: 15px;
+}
