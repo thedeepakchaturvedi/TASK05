@@ -30,11 +30,18 @@ class ProductCard {
     const priceComponent = new Price(this.data.price);
     priceComponent.mount(cardContainer);
 
+    // conditional rendering to reuse this card
+
     if (!this.forCart) {
       const counter = new Counter(this.data);
       counter.mount(cardContainer);
     }
-
+    else {
+        const itemCount = document.createElement("div");
+        itemCount.classList.add("item-count");
+        itemCount.innerText = `${this.data.count}`;
+        cardContainer.appendChild(itemCount);
+    }
     return cardContainer;
   }
 

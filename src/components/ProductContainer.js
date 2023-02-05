@@ -24,10 +24,16 @@ class ProductContainer {
       })
       .then((data) => {
         // data -- array of products
+        // load cards
         dataArray = [...data];
         console.log(dataArray);
         const cardSectionContainer = new CardSectionContainer(dataArray, false);
         cardSectionContainer.mount(productContainerDiv);
+      })
+      .then(() => {
+        // load cart
+        const cartSectionContainer = new CartSectionContainer(dataArray, true);
+        cartSectionContainer.mount(productContainerDiv);
       })
       .catch((err) => {
         console.log(err);
