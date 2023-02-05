@@ -10,10 +10,8 @@ class CartItems {
   render() {
     // deleting those element whose count is 0 after modification inside the cart item list
 
-    this.cart.forEach((ele, ind) => {
-      if (ele.count == 0) {
-        this.cart.splice(ind, 1);
-      }
+    this.cart = this.cart.filter((ele) => {
+      return ele.count !== 0;
     });
     const cartItemContainer = document.createElement("div");
 
