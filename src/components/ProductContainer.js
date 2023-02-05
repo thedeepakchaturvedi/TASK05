@@ -26,7 +26,6 @@ class ProductContainer {
         // data -- array of products
         // load cards
         dataArray = [...data];
-        console.log(dataArray);
         const cardSectionContainer = new CardSectionContainer(dataArray, false);
         cardSectionContainer.mount(productContainerDiv);
       })

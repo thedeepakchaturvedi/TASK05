@@ -47,7 +47,6 @@ class CartSectionContainer {
       // adding element in cart that are not present already
       this.data.forEach((ele) => {
         if (ele.count > 0) {
-          console.log(ele);
           if (!this.cartItemsData.includes(ele)) {
             this.cartItemsData.push(ele);
           }
